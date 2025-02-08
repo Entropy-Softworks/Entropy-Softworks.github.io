@@ -37,7 +37,6 @@ const StaticEffect = () => {
   return <div className={`static-overlay ${isActive ? 'active' : ''}`} />;
 };
 
-// Rest of the EntropyLines component remains the same
 const EntropyLines = () => {
   const [paths, setPaths] = useState([]);
   const pathsRef = useRef([]);
@@ -150,6 +149,7 @@ function App() {
       </div>
       <div className="content-wrapper">
         <div className="logo-container">
+          <div className="logo-glow"></div>
           <img 
             src={logo} 
             alt="Entropy Softworks Logo" 
