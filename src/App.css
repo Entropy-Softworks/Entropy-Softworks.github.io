@@ -23,7 +23,7 @@
 }
 
 .logo {
-  width: 75px; /* Setting explicit small size */
+  width: 150px; /* Setting size to 150px (halfway between 300px and 75px) */
   height: auto;
   filter: brightness(1.2)
          drop-shadow(0 0 5px rgba(255, 255, 255, 0.9))
