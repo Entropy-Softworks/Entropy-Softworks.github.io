@@ -116,7 +116,6 @@ const EntropyLines = () => {
 };
 
 function App() {
-  // Flag to control whether to show the lines or not
   const showLines = true;
 
   return (
@@ -128,11 +127,8 @@ function App() {
           <img 
             src={logo} 
             alt="Entropy Softworks Logo" 
-            className="logo glowing-logo"
+            className="logo"
           />
-        </div>
-        <div className="content">
-          coming soon....
         </div>
         <div className="social-links">
           <a 
