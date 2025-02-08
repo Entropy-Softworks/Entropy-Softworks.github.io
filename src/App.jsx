@@ -116,7 +116,7 @@ const EntropyLines = () => {
 
 function App() {
 // Flag to control the animation that generates lines
-const showLines = false;
+const showLines = true;
 
   return (
     <div className="app-container">
