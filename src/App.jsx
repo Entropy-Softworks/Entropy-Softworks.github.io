@@ -122,6 +122,32 @@ function App() {
     <div className="app-container">
       {showLines && <EntropyLines />}
       <StaticEffect />
+      <div className="social-links">
+        <a 
+          href="https://discord.gg/SYscNRHT" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Join our Discord"
+        >
+          <img 
+            src={discordIcon} 
+            alt="Join our Discord" 
+            className="social-icon"
+          />
+        </a>
+        <a 
+          href="https://steamcommunity.com/groups/entropysoftworks" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Join our Steam Community"
+        >
+          <img 
+            src={steamIcon} 
+            alt="Join our Steam Community" 
+            className="social-icon"
+          />
+        </a>
+      </div>
       <div className="content-wrapper">
         <div className="logo-container">
           <img 
@@ -129,32 +155,6 @@ function App() {
             alt="Entropy Softworks Logo" 
             className="logo"
           />
-        </div>
-        <div className="social-links">
-          <a 
-            href="https://discord.gg/SYscNRHT" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            aria-label="Join our Discord"
-          >
-            <img 
-              src={discordIcon} 
-              alt="Join our Discord" 
-              className="social-icon"
-            />
-          </a>
-          <a 
-            href="https://steamcommunity.com/groups/entropysoftworks" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            aria-label="Join our Steam Community"
-          >
-            <img 
-              src={steamIcon} 
-              alt="Join our Steam Community" 
-              className="social-icon"
-            />
-          </a>
         </div>
       </div>
     </div>
