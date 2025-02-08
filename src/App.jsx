@@ -51,14 +51,14 @@ const EntropyLines = () => {
       currentX: startX,
       currentY: startY,
       direction: Math.random() * Math.PI * 2,
-      speed: 0.5 + Math.random() * 0.5
+      speed: 0.05 + Math.random() * 0.05
     };
   };
 
   const updatePaths = () => {
     pathsRef.current = pathsRef.current.map(path => {
-      if (Math.random() < 0.05) {
-        path.direction += (Math.random() - 0.5) * Math.PI / 2;
+      if (Math.random() < 0.005) {
+        path.direction += (Math.random() - 0.05) * Math.PI / 2;
       }
 
       const dx = Math.cos(path.direction) * path.speed;
