@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import './App.css'
 import discordIcon from './assets/discord.svg'
 import steamIcon from './assets/steam.svg'
+import logo from './assets/logo.png'
 
 const StaticEffect = () => {
   const [isActive, setIsActive] = useState(false);
@@ -115,14 +116,21 @@ const EntropyLines = () => {
 };
 
 function App() {
-// Flag to control the animation that generates lines
-const showLines = true;
+  // Flag to control whether to show the lines or not
+  const showLines = true;
 
   return (
     <div className="app-container">
       {showLines && <EntropyLines />}
       <StaticEffect />
       <div className="content-wrapper">
+        <div className="logo-container">
+          <img 
+            src={logo} 
+            alt="Entropy Softworks Logo" 
+            className="logo glowing-logo"
+          />
+        </div>
         <div className="content">
           coming soon....
         </div>
