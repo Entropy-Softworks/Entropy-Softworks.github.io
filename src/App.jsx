@@ -120,7 +120,7 @@ const showLines = false;
 
   return (
     <div className="app-container">
-      <EntropyLines />
+      {showLines && <EntropyLines />}
       <StaticEffect />
       <div className="content-wrapper">
         <div className="content">
